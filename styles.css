@@ -31,9 +31,9 @@ button{
     text-align:center;
 }
 
+
 .playground{
     display:flex;
-    margin-right: 35px;
     width:100%;
     justify-content:center;
     gap:200px;
