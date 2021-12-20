@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
     <title>Rock Paper Scissors</title>
-    <script src = "script.js"></script>
 </head>
 <body>
-    
+        <div class = "middle">
+            <h1>Welcome to Rock, Paper, Scissors!</h1>
+            <p>Can you defeat the mighty computer in a first to 5 game?</p>
+        </div>
+        <div class = "playground">
+            <div class = "column">
+                <img id = "playerPick" src = "Paper.png">
+                <div>
+                <strong>You: </strong>
+                <number id = "human-score"></number>
+                </div>
+            </div>
+            <div class = " column">
+                <img id = "computerPick"src = "Rock.png">
+                <div>
+                    <strong>Computer: </strong>
+                    <number id = "computer-score"></number>
+                </div>
+            </div>
+        </div>
+        <div id = "container">
+            <button data-key = "Rock" id = "rock">Rock</button>
+            <button data-key = "Paper" id = "paper">Paper</button>
+            <button data-key = "Scissors" id = "scissors">Scissors</button>
+        </div>
+        <div>
+            <div class = "message-container">
+                <b id = "message"></b>
+            </div>
+        </div>
+        <div id = "gameResult">
+            <strong id = "gameWinnerMessage"></strong>
+        </div>
+        <div class = "message-container">
+            <button id = "tryAgainButton" style = "visibility: hidden">Try again?</button>
+        </div>
 </body>
+<script src = "script.js"></script>
 </html>
