@@ -60,8 +60,8 @@ btns.forEach(btn => btn.onclick =  (e)=>{
     let playerSelection = e.target.dataset.key;
     let computerSelection = computerPlay();
     let res = playRound(playerSelection, computerSelection);
-    playerPick.src = `${playerSelection}.png`;
-    computerPick.src = `${computerSelection}.png`;
+    playerPick.src = `images/${playerSelection}.png`;
+    computerPick.src = `images/${computerSelection}.png`;
     if(res == 1)
     {
         message.textContent = `You won! Computer played ${computerSelection}`;
